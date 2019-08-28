@@ -1,6 +1,10 @@
 # BERT with SentencePiece for Japanese text.
 This is a repository of Japanese BERT model with SentencePiece tokenizer.  
 
+'''
+ python3 combine_csv.py
+ python3 genre2value.py
+'''
 
 ## Pretrained models
 We provide pretrained BERT model and trained SentencePiece model for Japanese text.
