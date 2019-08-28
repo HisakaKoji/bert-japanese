@@ -5,6 +5,8 @@ This is a repository of Japanese BERT model with SentencePiece tokenizer.
  python3 combine_csv.py
  python3 genre2value.py
  https://github.com/HisakaKoji/test/blob/master/finetune_to_livedoor_corpus.ipynb
+ bert-japanese/notebook/test20190828.csv　ダウンロード
+ python3 num2genre.py
 ```
 
 ## Pretrained models
