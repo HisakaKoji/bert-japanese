@@ -424,8 +424,10 @@ def main(_):
           all_layers.append(layers)
         features = collections.OrderedDict()
         features["token"] = token
-        features["layers"] = all_layers[0]
+        features["layers"] = all_layers
         all_features.append(features)
+        break
+
       output_json["features"] = all_features
       writer.write(json.dumps(output_json) + "\n")
 
