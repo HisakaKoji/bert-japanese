@@ -422,6 +422,7 @@ def main(_):
               round(float(x), 6) for x in layer_output[i:(i + 1)].flat
           ]
           all_layers.append(layers)
+          break
         features = collections.OrderedDict()
         features["token"] = token
         features["layers"] = all_layers
