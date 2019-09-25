@@ -335,7 +335,7 @@ def read_examples(input_file):
       line = tokenization.convert_to_unicode(reader.readline())
       if not line:
         break
-    
+
       line = line.strip()
       text_a = None
       text_b = None
@@ -355,7 +355,7 @@ def read_examples(input_file):
 
 
 def main(_):
-       
+
   layer_indexes = [int(x) for x in FLAGS.layers.split(",")]
 
   bert_config = modeling.BertConfig.from_json_file(FLAGS.bert_config_file)
@@ -382,7 +382,7 @@ def main(_):
 
   unique_id_to_feature = {}
   for feature in features:
-      
+
     unique_id_to_feature[feature.unique_id] = feature
 
   model_fn = model_fn_builder(
@@ -392,7 +392,7 @@ def main(_):
       use_tpu=FLAGS.use_tpu,
       use_one_hot_embeddings=FLAGS.use_one_hot_embeddings)
 
-  
+
   # If TPU is not available, this will fall back to normal Estimator on CPU
   # or GPU.
   estimator = tf.contrib.tpu.TPUEstimator(
@@ -424,7 +424,7 @@ def main(_):
           all_layers.append(layers)
         features = collections.OrderedDict()
         features["token"] = token
-        features["layers"] = all_layers
+        features["layers"] = all_layers[0]
         all_features.append(features)
       output_json["features"] = all_features
       writer.write(json.dumps(output_json) + "\n")
