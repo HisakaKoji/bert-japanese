@@ -231,9 +231,9 @@ class LivedoorProcessor(DataProcessor):
 
   def get_labels(self):
     """See base class."""
-    return ['Traditional-Festivalsand-annual-events' , 'Shrine-floats-etc.'  , 'Traditional-performing-arts-and-dance' ,'Procession-and-parade' ,'food'   ,'market'   , \
-               'flower-nature'   ,'fire'   ,'fireworks'   ,'snow'  ,'illumination'  ,'music'  ,'sports'  ,'museum'  ,'museum'  ,'festival'  ,'animal'  ,'experience'  ,  \
-            'school'  ,'talk'  ,'stage'  ,'thema-park'  ,'animal-fish-park'  ,'anniversary'  ,'fair'  ,'other'  ,'Industry'  ,'Customs'  ,'Agricultural ritual' ,'none']
+    return ['Traditional-Festivalsand-annual-events'  , 'Traditional-performing-arts-and-dance'  ,'food'   , \
+               'flower-nature'  ,'fireworks'   ,'snow'  ,'illumination'  ,'music'  ,'sports'  ,'museum'  ,'festival'    ,'experience'  ,  \
+            'school'  ,'talk'  ,'stage'   ,'animal-fish-park'  ,'anniversary'  ,'fair'  ,'other'  ,'Industry'  ]
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
