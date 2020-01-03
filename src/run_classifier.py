@@ -231,7 +231,7 @@ class TitanicProcessor(DataProcessor):
 
   def get_labels(self):
     """See base class."""
-    return [0,1]
+    return ['0','1']
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
@@ -269,9 +269,7 @@ class LivedoorProcessor(DataProcessor):
 
   def get_labels(self):
     """See base class."""
-    return ['Traditional-Festivalsand-annual-events' , 'Shrine-floats-etc.'  , 'Traditional-performing-arts-and-dance' ,'Procession-and-parade' ,'food'   ,'market'   , \
-          'flower-nature'   ,'fire'   ,'fireworks'   ,'snow'  ,'illumination'  ,'music'  ,'sports'  ,'museum'  ,'museum'  ,'festival'  ,'animal'  ,'experience'  ,  \
-           'school'  ,'talk'  ,'stage'  ,'thema-park'  ,'animal-fish-park'  ,'anniversary'  ,'fair'  ,'other'  ,'Industry'  ,'Customs'  ,'Agricultural ritual' ,'none']
+    return ['0','1']
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
