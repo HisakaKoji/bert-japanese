@@ -700,7 +700,7 @@ def main(_):
 
   processors = {
       "livedoor": LivedoorProcessor,
-      "Titanic":  TitanicProcessor
+      "titanic":  TitanicProcessor
   }
 
   tokenization.validate_case_matches_checkpoint(FLAGS.do_lower_case,
